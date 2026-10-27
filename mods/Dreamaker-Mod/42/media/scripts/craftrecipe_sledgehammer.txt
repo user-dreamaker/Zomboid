@@ -1,0 +1,29 @@
+module Base
+{
+    craftRecipe Mjölnir
+    {
+        time = 100,
+        category = Assembly,
+        Tags = AnySurfaceCraft,
+        SkillRequired = Maintenance:1,
+        timedAction = ChoppingBlock_Hammer,
+        xpAward = Maintenance:1,
+        inputs
+        {
+            item 1 tags[base:hammer;base:clubhammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[base:sharpknife] mode:keep flags[SharpnessCheck;IsNotDull],
+            item 1 [Base.BallPeenHammerHead;Base.ClubHammerHead] flags[IsHeadPart;InheritSharpness] mappers[ThingMapper],
+            item 1 [Base.LongHandle] flags[Prop2;InheritCondition],
+        }
+        outputs
+        {
+            item 1 mapper:ThingMapper,
+        }
+        itemMapper ThingMapper
+        {
+            Base.Sledgehammer2 = Base.BallPeenHammerHead,
+            Base.Sledgehammer2 = Base.ClubHammerHead,
+            default = Base.Sledgehammer,
+        }
+    }
+}
