@@ -4,7 +4,7 @@ function SpawnPoints()
         { posX = 7822, posY = 11286, posZ = 0 },
         { posX = 8035, posY = 11560, posZ = 0 },
         { posX = 8078, posY = 11547, posZ = 1 },
-        { posX = 8037, posY = 11440, posZ = 1 },
+        { posX = 8042, posY = 11439, posZ = 1 },
         { posX = 8303, posY = 11689, posZ = 0 },
         { posX = 8495, posY = 11550, posZ = 0 },
         { posX = 7989, posY = 11755, posZ = 0 },
